@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0.2" demote-non-dropping-particle="never" default-locale="en-GB">
   <info>
-    <title>SAGE - Harvard</title>
-    <id>http://www.zotero.org/styles/sage-harvard</id>
-    <link href="http://www.zotero.org/styles/sage-harvard" rel="self"/>
+    <title>International Political Science Review (IPSR)</title>
+    <id>http://www.zotero.org/styles/international-political-science-review</id>
+    <link href="http://www.zotero.org/styles/international-political-science-review" rel="self"/>
     <link href="http://www.zotero.org/styles/the-open-university-harvard" rel="template"/>
-    <link href="https://uk.sagepub.com/sites/default/files/sage_harvard_reference_style_0.pdf" rel="documentation"/>
+    <link href="https://journals.sagepub.com/home/ips" rel="documentation"/>
     <author>
       <name>Joseph Reagle</name>
     </author>
     <category citation-format="author-date"/>
-    <summary>The SAGE Harvard author-date style</summary>
+    <summary>The International Political Science Review author-date style</summary>
     <updated>2025-05-18T00:55:38+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
@@ -25,29 +25,29 @@
   </locale>
   <macro name="editor">
     <names variable="editor" delimiter=", ">
-      <name and="text" delimiter=", " sort-separator=", " name-as-sort-order="first" form="long"><name-part name="given"/></name>
+      <name and="text" delimiter=", " sort-separator=", " name-as-sort-order="first" form="long"/>
       <label form="short" prefix=" (" suffix=")"/>
     </names>
   </macro>
   <macro name="editor-translator">
     <names variable="editor translator" delimiter="; ">
       <label form="short" suffix=" "/>
-      <name and="text" delimiter=", " name-as-sort-order="first" form="long" sort-separator=", "><name-part name="given"/></name>
+      <name and="text" delimiter=", " name-as-sort-order="first" form="long" sort-separator=", "/>
     </names>
   </macro>
   <macro name="proceedings-editor">
     <names variable="editor" delimiter=", " prefix="(" suffix=")">
       <label form="short" suffix=" "/>
-      <name and="text" delimiter=", " sort-separator=", " name-as-sort-order="first" form="long"><name-part name="given"/></name>
+      <name and="text" delimiter=", " sort-separator=", " name-as-sort-order="first" form="long"/>
     </names>
   </macro>
   <macro name="author">
     <names variable="author">
-      <name name-as-sort-order="first" and="text" sort-separator=", " delimiter=", " delimiter-precedes-last="never" form="long"><name-part name="given"/></name>
+      <name name-as-sort-order="first" and="text" sort-separator=", " delimiter=", " delimiter-precedes-last="never" form="long"/>
       <label form="short" prefix=" (" suffix=")"/>
       <substitute>
-        <names variable="editor"><name name-as-sort-order="first" and="text" form="long" sort-separator=", "><name-part name="given"/></name></names>
-        <names variable="translator"><name name-as-sort-order="first" and="text" form="long" sort-separator=", "><name-part name="given"/></name></names>
+        <names variable="editor"><name name-as-sort-order="first" and="text" form="long" sort-separator=", "/></names>
+        <names variable="translator"><name name-as-sort-order="first" and="text" form="long" sort-separator=", "/></names>
         <text variable="container-title" font-style="italic"/>
         <text macro="title"/>
       </substitute>
@@ -55,18 +55,18 @@
   </macro>
   <macro name="author-count">
     <names variable="author">
-      <name form="long" name-as-sort-order="first" and="text" sort-separator=", "><name-part name="given"/></name>
+      <name form="long" name-as-sort-order="first" and="text" sort-separator=", "/>
       <substitute>
-        <names variable="editor"><name name-as-sort-order="first" and="text" form="long" sort-separator=", "><name-part name="given"/></name></names>
+        <names variable="editor"><name name-as-sort-order="first" and="text" form="long" sort-separator=", "/></names>
       </substitute>
     </names>
   </macro>
   <macro name="author-short">
     <names variable="author">
-      <name and="text" delimiter=", " delimiter-precedes-last="never" name-as-sort-order="first" form="long" sort-separator=", "><name-part name="given"/></name>
+      <name and="text" delimiter=", " delimiter-precedes-last="never" name-as-sort-order="first" form="short" sort-separator=", "/>
       <substitute>
-        <names variable="editor"><name name-as-sort-order="first" and="text" form="long" sort-separator=", "><name-part name="given"/></name></names>
-        <names variable="translator"><name name-as-sort-order="first" and="text" form="long" sort-separator=", "><name-part name="given"/></name></names>
+        <names variable="editor"><name name-as-sort-order="first" and="text" form="short" sort-separator=", "/></names>
+        <names variable="translator"><name name-as-sort-order="first" and="text" form="short" sort-separator=", "/></names>
         <text variable="container-title" font-style="italic"/>
         <text macro="title"/>
       </substitute>
